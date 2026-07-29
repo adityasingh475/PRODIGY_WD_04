@@ -8,6 +8,14 @@
 
 <br><br>
 
+<a href="https://prodigy-wd-04-rose-ten.vercel.app/">
+<img src="https://img.shields.io/badge/🌐%20Live%20Demo-00C6FF?style=for-the-badge&logo=googlechrome&logoColor=white"/>
+</a>
+
+<a href="https://github.com/adityasingh475/PRODIGY_WD_04">
+<img src="https://img.shields.io/badge/📂%20Repository-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
 <a href="https://github.com/adityasingh475">
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
@@ -16,8 +24,7 @@
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
-<img src="https://komarev.com/ghpvc/?username=adityasingh475&label=Profile%20Views&color=0e75b6&style=for-the-badge"/>
-
+<img src="https://komarev.com/ghpvc/?username=adityasingh475&label=Profile%20Views&style=for-the-badge&color=0e75b6"/>
 </div>
 
 ---
