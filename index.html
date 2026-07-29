@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Pratap Singh — Full-Stack Web Developer</title>
+<meta name="description" content="Portfolio of Aditya Pratap Singh, full-stack web developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="scroll-progress">
+    <div class="scroll-progress-fill" id="scrollProgress"></div>
+</div>
+
+    <div class="aurora"></div>
+    <canvas id="particles"></canvas>
+    <div class="mouse-light"></div>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <div class="preloader-label">Portfolio<span class="dots">…</span></div>
+    <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+    <div class="preloader-pct" id="preloaderPct">0%</div>
+  </div>
+</div>
+
+<div class="grid-bg" id="gridBg"></div>
+<div class="ruler"><div class="ruler-fill" id="rulerFill"></div></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-coords" id="cursorCoords">X:0000 Y:0000</div>
+
+<header>
+
+  <div style="display:flex; align-items:center; gap:14px;">
+    <nav class="links" id="navLinks">
+      <a href="#sheet-01" data-i="1">01 · Home</a>
+      <a href="#sheet-02" data-i="2">02 · About</a>
+      <a href="#sheet-03" data-i="3">03 · Skills</a>
+      <a href="#sheet-04" data-i="4">04 · Work</a>
+      <a href="#sheet-05" data-i="5">05 · Contact</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="cmdkBtn" aria-haspopup="dialog" title="Quick navigation ( / )">⌕ <span class="label">Jump</span></button>
+      <button class="icon-btn" id="themeBtn" title="Toggle print mode">◐ <span class="label" id="themeLabel">Cyanotype</span></button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="sheet-counter">SHEET <b id="sheetNo">01</b> / 05</div>
+</header>
+
+<!-- ============ COMMAND PALETTE ============ -->
+<div class="cmdk-overlay" id="cmdkOverlay" aria-hidden="true">
+  <div class="cmdk-box" role="dialog" aria-modal="true" aria-label="Quick navigation">
+    <div class="cmdk-input-row">
+      <span class="cmdk-prefix">/&gt;</span>
+      <input type="text" id="cmdkInput" placeholder="jump to a sheet…" autocomplete="off">
+    </div>
+    <ul class="cmdk-list" id="cmdkList"></ul>
+    <div class="cmdk-hint">↑↓ navigate · ↵ select · esc close</div>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <!-- ===================== SHEET 01 — COVER / HERO ===================== -->
+  <section class="sheet hero" id="sheet-01">
+    <div class="sheet-frame">
+      <div class="frame-ruler reveal"><svg viewBox="0 0 400 12" preserveAspectRatio="none">
+        <line x1="0" y1="6" x2="400" y2="6" class="ruler-draw"/>
+        <line class="tick" x1="0" y1="2" x2="0" y2="10"/><line class="tick" x1="100" y1="3" x2="100" y2="9"/><line class="tick" x1="200" y1="2" x2="200" y2="10"/><line class="tick" x1="300" y1="3" x2="300" y2="9"/><line class="tick" x1="400" y1="2" x2="400" y2="10"/>
+      </svg></div>
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+    </div>
+    <div class="hero-grid">
+      <div>
+    <p class="eyebrow reveal" id="heroEyebrow">
+   PORTFOLIO • ASPIRING SOFTWARE DEVELOPER
+    </p>
+     <h1 class="name reveal" id="heroName">ADITYA<br>SINGH</h1>
+        <div class="hero-underline"><i id="heroUnderline"></i></div>
+    <p class="lede reveal d1" id="heroLede">
+B.Tech Computer Science Engineering student passionate about Web Development, Data Structures & Algorithms, and building clean, responsive websites. Currently focused on strengthening problem-solving skills while creating modern user experiences with HTML, CSS and JavaScript.
+    </p>
+        <div class="hero-cta reveal d2" id="heroCta">
+          <a class="btn btn-primary" href="#sheet-04" data-magnet>
+            View Projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+          </a>
+          
+
+          
+        </div>
+
+
+<div class="hero-meta reveal d3" id="heroMeta">
+
+    <span>
+        <b>Location</b>
+        Kanpur, India
+    </span>
+
+    <span>
+        <b>Education</b>
+        B.Tech CSE
+    </span>
+
+    <span>
+        <b>Status</b>
+        Open to Internships
+    </span>
+
+</div>
+<div class="coding-profiles reveal d3">
+
+    <a href="https://leetcode.com/" target="_blank" class="profile-card">
+        <h3>LeetCode</h3>
+        <p>100+ Problems Solved</p>
+    </a>
+
+    <a href="https://github.com/adityasingh475"
+       target="_blank"
+       class="profile-card">
+
+        <h3>GitHub</h3>
+        <p>10+ Repositories</p>
+
+    </a>
+
+    <a href="https://www.linkedin.com/in/adityasingh475/"
+       target="_blank"
+       class="profile-card">
+
+        <h3>LinkedIn</h3>
+        <p>200+ Connections</p>
+
+    </a>
+
+</div>
+      </div>
+      <div class="portrait-wrap">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <img src="profile..jpeg" alt="Aditya Singh" class="profile-photo">
+
+      </div>
+    </div>
+    <div class="tech-marquee">
+
+    <div class="tech-track">
+
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>C++</span>
+        <span>SQL</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Responsive Design</span>
+        <span>DSA</span>
+       
+
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>C++</span>
+        <span>SQL</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Responsive Design</span>
+        <span>DSA</span>
+        
+
+    </div>
+
+</div>
+  </section>
+  <div class="section-divider">
+    <span></span>
+</div>
+
+
+  <!-- ===================== SHEET 02 — ABOUT / SPEC ===================== -->
+  <section class="sheet" id="sheet-02">
+    <div class="sheet-frame">
+      <div class="frame-ruler reveal"><svg viewBox="0 0 400 12" preserveAspectRatio="none"><line x1="0" y1="6" x2="400" y2="6" class="ruler-draw"/><line class="tick" x1="0" y1="2" x2="0" y2="10"/><line class="tick" x1="200" y1="2" x2="200" y2="10"/><line class="tick" x1="400" y1="2" x2="400" y2="10"/></svg></div>
+
+    </div>
+    <div class="head-row reveal">
+      <div>
+        <p class="eyebrow">Sheet 02/05 — Specification</p>
+        <h2 class="title">About Me</h2>
+      </div>
+      
+    </div>
+    <div class="spec-grid">
+      <div class="spec-copy reveal d1">
+       <p>
+I am a B.Tech Computer Science Engineering student with a strong interest in Web Development and Data Structures & Algorithms. I enjoy building responsive, user-friendly websites while continuously improving my programming skills.
+</p>
+
+<p>
+I have developed projects using HTML, CSS and JavaScript, including responsive landing pages and personal portfolio websites. I focus on writing clean, maintainable code and creating smooth user experiences.
+</p>
+
+<p>
+Currently, I am strengthening my problem-solving skills through DSA and preparing myself for software development internships while continuously learning modern web technologies.
+</p>
+      </div>
+      <div class="spec-table reveal d2">
+<div class="spec-row">
+<div class="k">Education</div>
+<div class="v">
+B.Tech Computer Science Engineering
+<span>— PSIT</span>
+</div>
+</div>
+        <div class="spec-row">
+<div class="k">Experience</div>
+<div class="v">
+Fresher
+<span>— Open to Internship</span>
+</div>
+</div>
+<div class="spec-row">
+    <div class="k">Focus</div>
+    <div class="v">
+        Full Stack Development
+        <span>— HTML • CSS • JavaScript • React • Node.js • Express.js • MongoDB • SQL</span>
+    </div>
+</div>
+        <div class="spec-row"><div class="k">Location</div><div class="v">Kanpur, India
+
+        <span>— Open to Remote Opportunities</span>
+    </div>
+</div>
+
+<div class="spec-row">
+    <div class="k">Outside Work</div>
+    <div class="v">
+        Passionate About Building Projects, Problem Solving & Continuous Learning
+    </div>
+</div>
+
+</div> <!-- spec-table ends -->
+
+</div> <!-- spec-grid ends -->
+<div class="timeline reveal">
+
+
+
+</div>
+    <h3>Journey</h3>
+
+    <div class="timeline-item">
+        <span class="year">2024</span>
+        <div class="timeline-card">
+            <h3>Started B.Tech CSE</h3>
+            <p>Began learning programming fundamentals and C++.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="year">2025</span>
+        <div class="timeline-card">
+            <h3>Web Development</h3>
+            <p>Learned HTML, CSS and JavaScript. Built responsive websites.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <span class="year">2026</span>
+        <div class="timeline-card">
+            <h3>Projects & DSA</h3>
+            <p>Built multiple responsive web projects and solved 100+ DSA problems.</p>
+        </div>
+    </div>
+
+</div>
+  </section>
+  <div class="section-divider">
+    <span></span>
+</div>
+
+
+  <!-- ===================== SHEET 03 — SKILLS / COMPONENTS ===================== -->
+  <section class="sheet" id="sheet-03">
+    <div class="sheet-frame">
+      <div class="frame-ruler reveal"><svg viewBox="0 0 400 12" preserveAspectRatio="none"><line x1="0" y1="6" x2="400" y2="6" class="ruler-draw"/><line class="tick" x1="0" y1="2" x2="0" y2="10"/><line class="tick" x1="133" y1="3" x2="133" y2="9"/><line class="tick" x1="266" y1="3" x2="266" y2="9"/><line class="tick" x1="400" y1="2" x2="400" y2="10"/></svg></div>
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+    </div>
+    <div class="head-row reveal">
+      <div>
+        <p class="eyebrow">Sheet 03/05 — Components</p>
+        <h2 class="title">Skills &amp; Tools</h2>
+    <div class="skills-header-box">
+    <h3>Core Ideas</h3>
+    <p>
+        Building responsive websites with modern technologies while continuously
+        improving problem-solving, clean coding practices and software development skills.
+    </p>
+</div>
+      </div>
+     
+    </div>
+    <div class="skills-intro">
+    <p>
+        Technologies and tools I use to build modern, responsive and user-friendly web applications while continuously improving my development skills.
+    </p>
+</div>
+
+    <div class="tech-stack">
+<div class="tech-item frontend">🌐 HTML5</div>
+<div class="tech-item frontend">🎨 CSS3</div>
+<div class="tech-item frontend">🟨 JavaScript</div>
+<div class="tech-item frontend">⚛ React</div>
+
+<div class="tech-item backend">💻 C++</div>
+<div class="tech-item backend">🗄 SQL</div>
+
+<div class="tech-item tools">🐙 Git</div>
+<div class="tech-item tools">📂 GitHub</div>
+</div>
+    <div class="skills-grid">
+     <div class="skill-panel frontend reveal d1">
+        <h3>Frontend <small>04 items</small></h3>
+       <div class="meter" data-level="95">
+<div class="meter-top">
+<span>HTML5</span>
+<span>95%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill"></div>
+</div>
+</div>
+
+<div class="meter" data-level="92">
+<div class="meter-top">
+<span>CSS3</span>
+<span>92%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill"></div>
+</div>
+</div>
+
+<div class="meter" data-level="88">
+<div class="meter-top">
+<span>JavaScript</span>
+<span>88%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill"></div>
+</div>
+</div>
+
+<div class="meter" data-level="85">
+<div class="meter-top">
+<span>Responsive Design</span>
+<span>85%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill"></div>
+</div>
+</div>
+      </div>
+      <div class="skill-panel backend reveal d2">
+       <h3>Backend <small>04 items</small></h3>
+
+<div class="meter" data-level="70">
+    <div class="meter-top">
+        <span>Node.js</span>
+        <span>70%</span>
+    </div>
+    <div class="meter-track">
+        <div class="meter-fill"></div>
+    </div>
+</div>
+
+<div class="meter" data-level="65">
+    <div class="meter-top">
+        <span>Express.js</span>
+        <span>65%</span>
+    </div>
+    <div class="meter-track">
+        <div class="meter-fill"></div>
+    </div>
+</div>
+
+<div class="meter" data-level="60">
+    <div class="meter-top">
+        <span>MongoDB</span>
+        <span>60%</span>
+    </div>
+    <div class="meter-track">
+        <div class="meter-fill"></div>
+    </div>
+</div>
+
+<div class="meter" data-level="55">
+    <div class="meter-top">
+        <span>REST APIs</span>
+        <span>55%</span>
+    </div>
+    <div class="meter-track">
+        <div class="meter-fill"></div>
+    </div>
+</div>
+      </div>
+      <div class="skill-panel tools reveal d3">
+        <h3>Tooling <small>04 items</small></h3>
+        <div class="meter" data-level="90">
+<div class="meter-top">
+<span>Git</span>
+<span>90%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill"></div>
+</div>
+</div>
+
+<div class="meter" data-level="90">
+<div class="meter-top">
+<span>GitHub</span>
+<span>90%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill"></div>
+</div>
+</div>
+
+<div class="meter" data-level="75">
+<div class="meter-top">
+<span>VS Code</span>
+<span>75%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill"></div>
+</div>
+</div>
+
+<div class="meter" data-level="70">
+<div class="meter-top">
+<span>Windows</span>
+<span>70%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill"></div>
+</div>
+</div>
+      </div>
+    </div>
+    <div class="learning-section reveal">
+
+    <h3>📚 Currently Learning</h3>
+
+    <div class="learning-grid">
+<div class="learning-card">
+    <h3>Data Structures & Algorithms</h3>
+
+    <div class="learning-bar">
+        <div class="learning-fill" style="width:45%;"></div>
+    </div>
+
+    <span>45%</span>
+</div>
+
+<div class="learning-card">
+    <h3>JavaScript (Advanced)</h3>
+
+    <div class="learning-bar">
+        <div class="learning-fill" style="width:35%;"></div>
+    </div>
+
+    <span>35%</span>
+</div>
+
+<div class="learning-card">
+    <h3>React.js</h3>
+
+    <div class="learning-bar">
+        <div class="learning-fill" style="width:25%;"></div>
+    </div>
+
+    <span>25%</span>
+</div>
+
+    </div>
+
+</div>
+  </section>
+  
+
+ 
+
+  <!-- ===================== SHEET 04 — PROJECTS / ASSEMBLIES ===================== -->
+  <section class="sheet" id="sheet-04">
+    <div class="sheet-frame">
+      <div class="frame-ruler reveal"><svg viewBox="0 0 400 12" preserveAspectRatio="none"><line x1="0" y1="6" x2="400" y2="6" class="ruler-draw"/><line class="tick" x1="0" y1="2" x2="0" y2="10"/><line class="tick" x1="200" y1="2" x2="200" y2="10"/><line class="tick" x1="400" y1="2" x2="400" y2="10"/></svg></div>
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+    </div>
+    <div class="head-row reveal">
+      <div>
+        <p class="eyebrow">Sheet 04/05 — Assemblies</p>
+        <h2 class="title">Featured Projects</h2>
+      </div>
+    </div>
+    <div class="projects-grid">
+      <button class="project-card reveal d1" data-project="1">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+       <span class="plate-no">PLATE 01 — PORTFOLIO</span>
+
+<h3>Personal Portfolio Website</h3>
+
+<p>
+A modern responsive portfolio website showcasing my projects, skills, certificates and coding profiles with smooth animations and interactive UI.
+</p>
+ <div class="tag-row">
+    <span class="tag">HTML5</span>
+    <span class="tag">CSS3</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">Responsive</span>
+</div>
+
+<div class="tech-icons">
+  
+
+    <span>🌐 HTML5</span>
+    <span>🎨 CSS3</span>
+    <span>🟨 JavaScript</span>
+
+   </div>
+
+    <div class="project-buttons">
+
+    <a href="#" class="project-btn" target="_blank">
+        🌐 Live Demo
+    </a>
+
+    <a href="https://github.com/adityasingh475/PRODIGY_WD_04" class="project-btn" target="_blank">
+        💻 GitHub
+    </a>
+
+</div>
+      </button>
+      <button class="project-card reveal d2" data-project="2">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+       <span class="plate-no">PLATE 02 — TIC TAC TOE</span>
+        <h3>Tic Tac Toe Web App</h3>
+        <p>
+A responsive Tic Tac Toe game built using HTML, CSS and JavaScript with win, draw and restart functionality.
+</p>
+  <div class="tech-icons">
+    <span>🌐 HTML5</span>
+    <span>🎨 CSS3</span>
+    <span>🟨 JavaScript</span>
+</div>
+<div class="project-buttons">
+
+<a href="https://prodigywd3.vercel.app/" class="project-btn" target="_blank">
+🌐 Live Demo
+</a>
+
+<a href="https://github.com/adityasingh475/PRODIGY_WD_03" class="project-btn" target="_blank">
+💻 GitHub
+</a>
+
+</div> 
+      </button>
+      <button class="project-card reveal d3" data-project="3">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <span class="plate-no">PLATE 03 — STOPWATCH</span>
+        <h3>Stopwatch Web App</h3>
+        <p>
+A simple and responsive Stopwatch application built using
+HTML, CSS and JavaScript with start, stop, reset and lap
+functionality.
+</p>
+        <div class="tech-icons">
+    <span>🌐 HTML5</span>
+    <span>🎨 CSS3</span>
+    <span>🟨 JavaScript</span>
+</div>
+    <div class="project-buttons">
+
+<a href="https://prodigy-wd-02-wine.vercel.app/"
+class="project-btn"
+target="_blank">
+🌐 Live Demo
+</a>
+
+<a href="https://github.com/adityasingh475/PRODIGY_WD_02"
+class="project-btn"
+target="_blank">
+💻 GitHub
+</a>
+
+</div>
+      </button>
+      <button class="project-card reveal d4" data-project="4">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <span class="plate-no">PLATE 04 — LANDING PAGE</span>
+       <h3>Responsive Landing Page</h3>
+   <p>
+A responsive landing page built using HTML, CSS and JavaScript with
+clean UI, smooth animations and responsive design.
+</p>
+    <div class="tag-row">
+    <span class="tag">HTML5</span>
+    <span class="tag">CSS3</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">Responsive</span>
+</div>
+     <div class="tech-icons">
+    <span>🌐 HTML5</span>
+    <span>🎨 CSS3</span>
+    <span>🟨 JavaScript</span>
+</div>
+    <div class="project-buttons">
+<a href="https://wonderful-platypus-44ea94.netlify.app/"
+class="project-btn"
+target="_blank">
+🌐 Live Demo
+</a>
+
+<a href="https://github.com/adityasingh475/-PRODIGY_WD_01"
+class="project-btn"
+target="_blank">
+💻 GitHub
+</a>
+
+</div>
+      </button>
+    </div>
+  </section>
+  <div class="section-divider">
+    <span></span>
+</div>
+
+
+  <!-- ===================== SHEET 05 — CONTACT / SIGN-OFF ===================== -->
+  <section class="sheet" id="sheet-05">
+    <div class="sheet-frame">
+      <div class="frame-ruler reveal"><svg viewBox="0 0 400 12" preserveAspectRatio="none"><line x1="0" y1="6" x2="400" y2="6" class="ruler-draw"/><line class="tick" x1="0" y1="2" x2="0" y2="10"/><line class="tick" x1="200" y1="2" x2="200" y2="10"/><line class="tick" x1="400" y1="2" x2="400" y2="10"/></svg></div>
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+    </div>
+    <div class="head-row reveal">
+      <div>
+        <p class="eyebrow">Sheet 05/05 — Sign-off</p>
+        <h2 class="title">Get In Touch</h2>
+      </div>
+
+    </div>
+    <div class="contact-grid">
+      <div class="contact-copy reveal d1">
+        <p>Have a project in mind, or just want to talk through an idea? My inbox is open — I read every message and usually reply within a day or two.</p>
+        <div class="social-row">
+       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adityapratapsingh581@gmail.com"
+   target="_blank">
+    Email
+</a>
+    
+         <a href="https://github.com/adityasingh475"
+   target="_blank">
+    GitHub
+</a>
+          <a href="https://www.linkedin.com/in/adityasingh475/"
+   target="_blank">
+    LinkedIn
+</a>
+        </div>
+        <div class="signoff">
+          <div><b>Designed by</b>Aditya Pratap Singh</div>
+          <div><b>Role</b>Full-Stack Developer</div>
+          <div><b>Date</b> <span id="todayDate"></span></div>
+        </div>
+      </div>
+    
+      
+      <div class="availability-card reveal d2">
+
+    <h3>AVAILABLE FOR</h3>
+
+    <div class="availability-item">
+        ✔ Software Engineering Internship
+    </div>
+
+    <div class="availability-item">
+        ✔ Frontend Development
+    </div>
+
+    <div class="availability-item">
+        ✔ Freelance Projects
+    </div>
+
+    <div class="availability-item">
+        ✔ Open Source Collaboration
+    </div>
+
+    <div class="availability-status">
+
+        <span>Response Time</span>
+
+        <strong>&lt; 24 Hours</strong>
+
+    </div>
+
+</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Aditya Singh. All rights reserved.</span>
+  <span id="localClock">IST —:—:—</span>
+  <span class="footer-hint">Press <kbd>/</kbd> to jump around</span>
+</footer>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    ↑
+</button>
+<script src="script.js"></script>
+</body>
+</html>
