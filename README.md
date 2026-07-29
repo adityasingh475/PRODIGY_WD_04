@@ -185,17 +185,6 @@ Unlike a traditional portfolio, this project focuses on creating a memorable fir
 </div>
 
 ---
-
-# 📸 Screenshots
-
-<div align="center">
-
-### 🏠 Home Page
-
-<img width="900" src="preview.png"/>
-
-</div>
-
 ---
 
 # 🎯 Core Sections
@@ -304,15 +293,6 @@ Deployment         🚀
 </div>
 
 ---
-# 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=adityasingh475&show_icons=true&theme=tokyonight&hide_border=true&border_radius=15"/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=adityasingh475&layout=compact&theme=tokyonight&hide_border=true&border_radius=15"/>
-
-</div>
 
 ---
 
@@ -335,15 +315,6 @@ Deployment         🚀
 </div>
 
 ---
-
-# 🏆 GitHub Achievements
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=adityasingh475&theme=algolia&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15"/>
-
-</div>
-
 ---
 
 # 🚀 Development Journey
