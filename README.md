@@ -174,18 +174,6 @@ Unlike a traditional portfolio, this project focuses on creating a memorable fir
 
 ---
 
-# 🖥️ Live Demo
-
-<div align="center">
-
-<a href="YOUR_PORTFOLIO_LINK">
-
-<img src="https://img.shields.io/badge/🌐%20Live%20Portfolio-00C6FF?style=for-the-badge"/>
-
-</a>
-
-</div>
-
 ---
 ---
 
